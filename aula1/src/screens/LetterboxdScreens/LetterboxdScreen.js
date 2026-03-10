@@ -1,22 +1,23 @@
 import { Ionicons } from "@expo/vector-icons";
 import { Image, ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { router } from "expo-router";
 
 // Primeira linha de filmes - Popular this week
 const popularThisWeek = [
-  { id: 1, image: require("../../assets/letterboxd/clube da luta.png"), rating: 2.5, year: 1999, title: "CLUBE DA LUTA" },
-  { id: 2, image: require("../../assets/letterboxd/500 dias.png"), rating: 4.0, year: 2009, title: "500 DIAS" },
-  { id: 3, image: require("../../assets/letterboxd/brilho eterno.png"), rating: 5.0, year: 2004, title: "BRILHO ETERNO" },
-  { id: 4, image: require("../../assets/letterboxd/carros.png"), rating: 1.5, year: 2006, title: "CARROS" },
-  { id: 5, image: require("../../assets/letterboxd/kpop.png"), rating: 3.5, year: 2025, title: "GUERREIRAS DO KPOP" },
+  { id: 1, image: require("../../../assets/letterboxd/clube da luta.png"), rating: 2.5, year: 1999, title: "CLUBE DA LUTA" },
+  { id: 2, image: require("../../../assets/letterboxd/500 dias.png"), rating: 4.0, year: 2009, title: "500 DIAS" },
+  { id: 3, image: require("../../../assets/letterboxd/brilho eterno.png"), rating: 5.0, year: 2004, title: "BRILHO ETERNO" },
+  { id: 4, image: require("../../../assets/letterboxd/carros.png"), rating: 1.5, year: 2006, title: "CARROS" },
+  { id: 5, image: require("../../../assets/letterboxd/kpop.png"), rating: 3.5, year: 2025, title: "GUERREIRAS DO KPOP" },
 ];
 
 // Segunda linha de filmes - New from friends (com imagens)
 const newFromFriends = [
-  { id: 1, image: require("../../assets/letterboxd/lalalixo.png"), rating: 2.0, year: 2016, title: "LA LA LAND", user: "Isabela" },
-  { id: 2, image: require("../../assets/letterboxd/parasita.png"), rating: 5.0, year: 2019, title: "EDIFICIO MASTER", user: "Murilobb" },
-  { id: 3, image: require("../../assets/letterboxd/ponyo.png"), rating: 4.5, year: 2008, title: "HAMNET", user: "Isabella" },
-  { id: 4, image: require("../../assets/letterboxd/weapons.png"), rating: null, year: 2025, title: "WEAPONS", user: "Jur" },
-  { id: 5, image: require("../../assets/letterboxd/iluminado.png"), rating: 5.0, year: 2023, title: "O ILUMINADO", user: "sophii" },
+  { id: 1, image: require("../../../assets/letterboxd/lalalixo.png"), rating: 2.0, year: 2016, title: "LA LA LAND", user: "Isabela" },
+  { id: 2, image: require("../../../assets/letterboxd/parasita.png"), rating: 5.0, year: 2019, title: "EDIFICIO MASTER", user: "Murilobb" },
+  { id: 3, image: require("../../../assets/letterboxd/ponyo.png"), rating: 4.5, year: 2008, title: "HAMNET", user: "Isabella" },
+  { id: 4, image: require("../../../assets/letterboxd/weapons.png"), rating: null, year: 2025, title: "WEAPONS", user: "Jur" },
+  { id: 5, image: require("../../../assets/letterboxd/iluminado.png"), rating: 5.0, year: 2023, title: "O ILUMINADO", user: "sophii" },
 ];
 
 const renderStars = (rating) => {
@@ -160,7 +161,9 @@ export default function LetterboxdScreen() {
           <Ionicons name="people" size={22} color="#9ab" />
           <Text style={styles.navText}>Social</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.navItem}>
+        <TouchableOpacity style={styles.navItem}
+          onPress={() => router.push("/profile")}>
+          onPress={() => router.push("/profile")}
           <Ionicons name="person" size={22} color="#9ab" />
           <Text style={styles.navText}>Profile</Text>
         </TouchableOpacity>
