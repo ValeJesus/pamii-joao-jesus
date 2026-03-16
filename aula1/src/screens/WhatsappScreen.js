@@ -51,6 +51,14 @@ const chats = [
     unread: 2,
     avatar: require("../../assets/whatsapp/user6.png"),
   },
+  {
+    id: 7,
+    name: "Siles",
+    message: "é MB pra todo mundo",
+    time: "16:06",
+    unread: 0,
+    avatar: require("../../assets/whatsapp/user1.png"),
+  },
 ];
 
 export default function WhatsappScreen() {
