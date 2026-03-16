@@ -2,6 +2,7 @@ import { MaterialIcons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
 import React from "react";
 import {
+    Image,
     Platform,
     ScrollView,
     StyleSheet,
@@ -122,12 +123,13 @@ export default function WhatsTelaChatScreen() {
                     <MaterialIcons name="arrow-back" size={23} color="#fff" />
                 </TouchableOpacity>
 
-                <View style={styles.avatar}>
-                    <Text style={styles.avatarLetter}>J</Text>
-                </View>
+                <Image
+                    source={require("../../assets/whatsapp/user1.png")}
+                    style={styles.avatar}
+                />
 
                 <View style={styles.headerMid}>
-                    <Text style={styles.headerName} numberOfLines={1}>João Siles</Text>
+                    <Text style={styles.headerName} numberOfLines={1}>Siles</Text>
                     <Text style={styles.headerSub}>Jogando Pokemon</Text>
                 </View>
 

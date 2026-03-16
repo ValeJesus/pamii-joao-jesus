@@ -54,7 +54,7 @@ const chats = [
   {
     id: 7,
     name: "Siles",
-    message: "é MB pra todo mundo",
+    message: "aproveitem",
     time: "16:06",
     unread: 0,
     avatar: require("../../assets/whatsapp/user1.png"),

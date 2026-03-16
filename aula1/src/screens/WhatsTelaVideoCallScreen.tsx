@@ -65,7 +65,7 @@ export default function WhatsTelaVideoCallScreen() {
           NOME + DURAÇÃO (abaixo do topo)
       ════════════════════════════════ */}
             <View style={styles.nameArea}>
-                <Text style={styles.contactName}>João Siles</Text>
+                <Text style={styles.contactName}>Siles</Text>
                 <Text style={styles.callDuration}>01:57:24</Text>
             </View>
 
@@ -85,7 +85,7 @@ export default function WhatsTelaVideoCallScreen() {
             </View>
 
             {/* ════════════════════════════════
-          CONTROLES — barra pill (igual à imagem)
+          CONTROLES — barra pill 
       ════════════════════════════════ */}
             <View style={styles.controlsBar}>
 
