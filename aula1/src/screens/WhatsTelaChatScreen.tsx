@@ -1,4 +1,4 @@
-import { MaterialIcons } from "@expo/vector-icons";
+    import { MaterialIcons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
 import React from "react";
 import {
@@ -29,8 +29,8 @@ const MESSAGES = [
     { id: 2, type: "sent", text: "Tudo ótimo! E você?", time: "10:29", read: true },
     { id: 3, type: "received", text: "Mandei mensagem para avisar que essa tela merece um MB", time: "10:30" },
     { id: 4, type: "sent", text: "Sério?! Que legal", time: "10:31", read: true },
-    { id: 5, type: "received", text: "Oseu grupo apesar de ter mais pessoas que o permitido vai levar MB", time: "10:33" },
-    { id: 6, type: "received", text: "e quem reclamar vai tirar I", time: "10:33" },
+    { id: 5, type: "received", text: "O seu grupo está de parabéns pelo resultado", time: "10:33" },
+    { id: 6, type: "received", text: "o trabalho ficou muito bem feito", time: "10:33" },
     { id: 7, type: "sent", text: "que bom professor fico muito feliz", time: "10:35", read: true },
     { id: 8, type: "sent", text: "nosso grupo esta muito feliz com a noticia", time: "10:35", read: false },
     { id: 9, type: "received", text: "aproveitem", time: "10:36" },
