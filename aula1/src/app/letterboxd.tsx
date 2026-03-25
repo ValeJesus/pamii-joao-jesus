@@ -1,4 +1,4 @@
-import LetterboxdScreen from "../screens/letterboxdscreens/letterboxdscreen";
+import LetterboxdScreen from "../screens/LetterboxdScreens/LetterboxdScreen";
 
 export default function Letterboxd() {
   return <LetterboxdScreen />;

@@ -1,4 +1,4 @@
-import YoutubeScreen from "../screens/youtubescreen";
+import YoutubeScreen from "../screens/YoutubeScreen";
 
 export default function Youtube() {
   return <YoutubeScreen />;
